@@ -16,6 +16,10 @@ body {
 .magic-list {
 
 }
+a {
+	text-decoration: none;
+	color: black;
+}
 .magic-list_item {
 	padding: calc(2% + 5px);
 }
@@ -35,11 +39,11 @@ body {
 }
 .cursor {
 	transition: transform var(--transition-cursor), height 1s ease;
-	display: none;
+	
 	
 }
 .magic-list_item:hover .cursor {
-	display: block;
+	
 	font-weight: bold;
 	width: calc(100% / 3);
 	height: calc(100% / 4);
