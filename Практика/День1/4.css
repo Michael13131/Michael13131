@@ -1,0 +1,86 @@
+@media (max-width: 413px) {
+	.conteiner {
+		width: var(--somevar);
+		height: var(--somevar);
+	}
+}
+a{
+	font-size: calc(5vw);
+	color: black;
+	display: inline-block;
+	text-decoration: none;
+}
+.conteiner {
+	width: 15000px;
+	justify-content: center;
+}
+content{
+	align-items: center;
+	vertical-align: center;
+}
+.title {
+	font-size: calc((5.5vh + 5.5 wh));
+	text-align: center;
+}
+.logo{
+	align-items: center;
+	width: 100px;
+	justify-content: center;
+}
+.logo2{
+	align-items: center;
+	width: 300px;
+	justify-content: center;
+}
+@media screen and (max-width: 850px) {
+	.conteiner {
+		width: 200px;
+	}
+}
+#calc {
+			width: 200px;
+			padding: 2px;
+			padding-bottom: 4px;
+			border: 1px solid #000;
+			font-size: 0;
+			margin: 0 auto;
+			position: relative;
+		}
+		#display {
+			display: block;
+			width: 185px;
+			height: 30px;
+			border: 1px solid #000;
+			margin: 0 auto;
+			margin: 4px;
+			text-align: right;
+			outline: 0;
+			background: #fff;
+			padding-right: 5px;
+		}
+		.button {
+			width: 40px;
+			height: 30px;
+			line-height: 30px;
+			display: inline-block;
+			cursor: pointer;
+			border: 1px solid #000;
+			margin: 4px;
+			font-size: 16px;
+			text-align: center;
+			transition: background .1s,
+			color .1s;
+		}
+		.button:hover {
+			background: #000;
+			color: #fff;
+		}
+		.button_C {
+			position: absolute;
+			left: 8px;
+			top: 8px;
+			width: 20px;
+			height: 20px;
+			font-size: 12px;
+			line-height: 20px;
+		}

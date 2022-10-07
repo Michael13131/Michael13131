@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="4.css">
+</head>
+<body>
+	<div class="conteiner">
+		<div class="posts-list">
+			<article id="0" class="post">
+				<img class="logo" src="1.png">
+				<p class="title">Privets!</p>
+				<a href="http://suvc.ru">Nash site |</a>
+				<a href="http://wiki.com">Bibleoteka |</a>
+				<a href="http://apple.com">Magazine</a>
+				<p class="content">London is the capital of Greate Britain</p>
+			</article>
+			<article id="1" class="post">
+				<img class="logo2" src="11.jpg">
+				<h1 class="title">Здравствуйте</h1>
+				<h1 class="description">Доброе утро!</h1>
+				<p class="content">Здесь вы можете решить все проблемы мира ----></p>
+			</article>
+		</div>
+	</div>
+	<div id="calc" class="conteiner">
+<input type="text" id="display" disabled="">
+<div class="button button_C" title="Очистить" data-type="C">C</div>
+<div class="button" data-type="7">7</div>
+<div class="button" data-type="8">8</div>
+<div class="button" data-type="9">9</div>
+<div class="button" data-type="/">÷</div>
+<div class="button" data-type="4">4</div>
+<div class="button" data-type="5">5</div>
+<div class="button" data-type="6">6</div>
+<div class="button" data-type="*">×</div>
+<div class="button" data-type="1">1</div>
+<div class="button" data-type="2">2</div>
+<div class="button" data-type="3">3</div>
+<div class="button" data-type="3">3</div>
+<div class="button" data-type="0">0</div>
+<div class="button" data-type=".">.</div>
+<div class="button" data-type="=">=</div>
+<div class="button" data-type="+">+</div>
+</div>
+<script>
+		var calc = document.getElementById('calc');
+		var buttons = calc.getElementsByClassName('button');
+		var display = document.getElementById('display');
+		var str = '';
+		for (var i = 0; i < buttons.length; i++) {
+			addEvent(buttons[i]);               
+		}
+		function addEvent(button) {
+			button.addEventListener('click', event);
+			function event() {
+				var type = button.getAttribute('data-type');  
+				if (type === '=') {
+					str = eval(str);
+					display.value = str;
+					return;
+				} else if (type === 'C') {
+					str = '';
+				} else {
+					str += type;
+				}
+				display.value = str;
+			}
+		}
+</script>
+</body>
+</html>
