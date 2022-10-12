@@ -1,0 +1,225 @@
+body {
+	margin: 0 0 1em 0;
+	padding: 0;
+	color: black;
+	background-color: #eee;
+	line-height: 130%;
+	font-family: arial, helvetica, verdana, tahoma, sans-serif;
+	text-align: center;
+}
+.imglogo {
+	width: 238px;
+	height: 114.5px;
+	align-items: left;
+}
+#wrapper-header {
+	background: #222 url('../images/baner.jpg');
+}
+#header {
+	
+	width: 75%;
+	height: 255px;
+	line-height: 65px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#header h1 {
+	margin: 30px
+	padding: 0;
+	color: #eee;
+	font-size: 420%;
+	padding-left: 10px;
+	letter-spacing: -0.1em;
+	text-align: center;
+	font-family: verdana;
+	cursor: pointer;
+	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15); 
+}
+
+#wrapper-menu {
+	background: black;
+	float: left;
+	width: 100%;
+}
+
+#menu {
+	width: 75%;
+	margin: 0 auto;
+	font-size: 180%;
+	white-space: nowrap;
+	padding-right: 2px;	
+}
+
+* html #menu { padding-right: 0; } 
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	width: 100%;
+
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a:link, #menu a:visited {
+	padding: 0.2em 1em;
+	background: transparent;
+	color: purple;
+	text-decoration: none;
+	float: left;
+	
+}
+
+#menu ul li a:hover
+{
+	background: purple;
+	color: black;
+}
+
+#content {
+	width: 73%;
+	margin: 0 auto;
+	padding: 3.5em 1% 20px 1%;
+	border-left: 1px solid #bbb;
+	border-right: 1px solid #bbb;
+	background: white;
+	font-size: 90%;
+	text-align: left;
+}
+.imgonas {
+	width: 500px;
+	height: 500px;
+	padding-right: 50PX;
+	padding-top: 30PX;
+	padding-left: 50px;
+	padding-bottom: 30px;
+}
+#content p {
+	font-size: 18px;
+}
+
+* html #content { padding-top: 1.8em; } 
+
+#footer {
+	margin: 0 auto;
+	padding: 2px 1%;
+	width: 73%;
+	text-align: right;
+	color: white;
+	letter-spacing: 0.15em;
+	background: black;
+	font-size: 80%;
+}
+
+h2 {
+	color: purple;
+	padding-bottom: 3px;
+	font-size: 300%;
+	letter-spacing: -0.1em;
+	padding-left: 35px;
+	text-align:center;
+	text-shadow: 6px 6px 6px rgba(0,0,0,0.2);
+	cursor: pointer;
+	animation: shadows 4s infinite ease-in;
+}
+@keyframes shadows {
+  60% {
+    text-shadow: 0 0 0 crimson;
+  }
+  90% {
+    text-shadow: 0 30px 40px transparent;
+  }
+  100% {
+      text-shadow: 0 0 0 transparent;
+  }
+}
+
+a:link, a:visited {
+	color: #260;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #000;
+	
+}
+
+p { 
+	padding-left: 35px; 
+}
+.onas {
+	color: purple;
+	font-size: 50px;
+	text-align: left;
+	padding-left: 50px;
+}
+.onas2 {
+	color: grey;
+	font-size: 20px;
+	text-align: left;
+	padding-left: 50px;
+}
+.imgmain {
+	width: 800px;
+	height: 550px;
+	padding-left: 35px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.karta {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+.uslugi li{ 
+	font-size: 20px;
+	font-family: verdana;
+}
+.textvuslugi {
+	text-shadow: 0 0 15px #999;
+  	color: transparent;
+  	transition: all .5s;
+  	font-size: 30px;
+  	padding-left: 30px;
+  	line-height: 1.5;
+  	padding-bottom: 100px;
+}
+.cifri {
+	font-size: 40px;
+	color: purple;
+	cursor: pointer;
+	padding-right: 35px;
+}
+
+.textvuslugi:hover {
+    text-shadow: 0 0 0px grey;
+    cursor: pointer;
+}
+#contact td {
+	font-size: 20px;
+	color: grey;
+}
+#contact p {
+	font-size: 23px;
+	color:purple;
+}
